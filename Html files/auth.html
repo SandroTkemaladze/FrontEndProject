@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <style>
+        body{
+            background-image: url(images/background5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        ul{
+            list-style-type: none;
+            margin: auto;
+            width: 80%;
+            overflow: hidden;
+            background-color: rgb(61, 50, 50);
+        }
+        li{
+            float: left;
+            position: relative;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 60px;
+        }
+        input {
+            width: 80%;
+            padding: 15px;
+            display: block;
+            margin: 30px auto;
+            background: #e6d0d0;
+        }
+        .login{
+            background-color: darkorange;
+            color: white;
+            padding: 15px 20px;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="auth.html">Authorization</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" required>
+            <button type="submit" class="login">Login</button>
+        </div>
+    </div>
+</body>
+</html>

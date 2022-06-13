@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        body{
+            background-image: url(images/background5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .cont2{
+            padding-top: 5px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            min-height: 700px;
+        }
+        ul{
+            list-style-type: none;
+            margin: auto;
+            width: 80%;
+            overflow: hidden;
+            background-color: rgb(61, 50, 50);
+        }
+        li{
+            float: left;
+            position: relative;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 60px;
+        }
+        .img{
+            height: 50%;
+            width: 50%;
+        }
+        .text{
+            width: 550px;
+            min-height: 0;
+            min-width: 0;
+            border: 1px solid;
+            padding-top: 5px;
+            inline-size: 550px;
+        }
+        .text1{
+            width: 550px;
+            word-wrap: break-word;
+            border: 1px solid;
+            inline-size: 550px;
+        }
+        @media only screen and (max-width: 600px){
+            .cont2{
+                flex-direction: column;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="auth.html">Authorization</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="cont2">
+            <div class="rating">
+                <p>Please rate our Webpage:</p>
+                <input type="radio" id="good" name="rating">
+                <label for="good">Good</label><br>
+                <input type="radio" id="average" name="rating">
+                <label for="average">Average</label><br>
+                <input type="radio" id="bad" name="rating">
+                <label for="bad">Bad</label><br>
+                <input type="submit" name="submit" id="submit">
+            </div>
+            <div class="text">
+                <img class="img" src="images/img1.png">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer arcu arcu, imperdiet sodales turpis et, ullamcorper 
+                    vehicula risus. Proin sodales dolor vel sapien eleifend, vitae 
+                    condimentum orci convallis. Donec tempor orci a auctor tempus. Suspendisse 
+                    potenti. Aenean ut cursus lorem. Praesent vitae dolor placerat, pellentesque 
+                    turpis nec, vehicula enim.Donec ut ex orci. Vivamus sed magna pellentesque, eleifend orci eu, dictum nunc. Proin maximus vulputate augue eleifend aliquet. Etiam posuere libero et ligula fermentum commodo. Etiam sit amet aliquet quam. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vitae imperdiet purus. Sed pulvinar enim sed aliquet efficitur. Proin nisi sem, tempor ornare sapien eu, rhoncus pharetra mi. Aliquam erat volutpat. Sed id mattis leo, sed consectetur orci. Maecenas accumsan turpis et diam viverra maximus. Mauris bibendum, sem et porta tristique, turpis felis faucibus lorem, ac varius nunc lorem sit amet justo. Etiam dignissim id sem et pulvinar. Vivamus at facilisis metus.
+                </p>
+            </div>
+            <div class="text1">
+                <img class="img" src="images/school.jpg">
+                <p>
+                    Donec ut ex orci. Vivamus sed magna pellentesque, eleifend orci eu, dictum nunc. Proin maximus vulputate augue eleifend aliquet. Etiam posuere libero et ligula fermentum commodo. Etiam sit amet aliquet quam. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vitae imperdiet purus. Sed pulvinar enim sed aliquet efficitur. Proin nisi sem, tempor ornare sapien eu, rhoncus pharetra mi. Aliquam erat volutpat. Sed id mattis leo, sed consectetur orci. Maecenas accumsan turpis et diam viverra maximus. Mauris bibendum, sem et porta tristique, turpis felis faucibus lorem, ac varius nunc lorem sit amet justo. Etiam dignissim id sem et pulvinar. Vivamus at facilisis metus.Maecenas gravida hendrerit vehicula. Sed eget egestas felis. Proin nisl arcu, consectetur sed magna in, pharetra sagittis ante. Nunc semper justo at ex venenatis luctus. Fusce et orci vel justo gravida facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ut neque varius, viverra dolor eget, luctus leo. Nam sodales ligula efficitur magna malesuada mattis. Fusce egestas turpis et ante ullamcorper, at faucibus ligula luctus.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

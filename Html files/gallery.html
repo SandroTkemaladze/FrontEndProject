@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            background-image: url(images/background5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        ul{
+            list-style-type: none;
+            margin: auto;
+            width: 80%;
+            overflow: hidden;
+            background-color: rgb(61, 50, 50);
+        }
+        li{
+            float: left;
+            position: relative;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 60px;
+        }
+        img{
+            width: 33%;
+        }
+        .photos{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .col{
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="auth.html">Authorization</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="photos">
+            <div class="col">
+                <img src="images/classroom1.jpg">
+                <img src="images/classroom2.jpg">
+                <img src="images/classroom3.jpg">
+            </div>
+            <div class="col">
+                <img src="images/classroom4.jpg">
+                <img src="images/classroom5.jpg">
+                <img src="images/classroom6.jpg">
+            </div>
+            <div class="col">
+                <img src="images/classroom7.jpg">
+                <img src="images/classroom8.jpg">
+                <img src="images/classroom9.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
